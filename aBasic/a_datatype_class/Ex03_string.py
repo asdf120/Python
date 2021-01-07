@@ -107,8 +107,9 @@ print()
     '12시 5분' 출력
 """
 msg = '2020-02-22 : 12:05:12'
-print(msg[:4]+'년', msg[5:7]+'월', msg[8:10]+'일')
+print(msg[:4]+'년', str(int(msg[5:7]))+'월', msg[8:10]+'일')
 print(msg[13:15]+'시', msg[16:18]+'분')
+print()
 
 # -----------------------------------------
 #  (4-1) 문자열 관련 함수
@@ -127,8 +128,14 @@ msg ='오늘도 행복도 하다'
     4) 문자열 전체 길이 구하기
     5) '도'라는 단어의 갯수 구하기
 """
+print(msg.index('행복'))
+print(msg.find('행복'))
 
-
+print(msg.find('가자'))
+print(msg.rfind('행복'))
+print(len(msg))
+print(msg.count('도'))
+print()
 
 
 # -----------------------------------------
@@ -140,10 +147,12 @@ msg ='오늘도 행복도 하다'
 #   s.strip() : 양쪽 공백 지우기
 
 msg = '  This is My Life  '
+print(msg.upper())
+print(msg.lower())
+print(msg.upper().strip())
+print(msg.strip().lower())
 
-
-
-
+print()
 
 
 # -----------------------------------------
@@ -154,12 +163,28 @@ msg = '  This is My Life  '
 #   d.join(s) : d 단어를 s 문자열에 삽입
 
 msg = "우리는 독도를 지킨다"
+print(msg.replace("독도","대한민국"))
+print(msg.split())
+print(','.join(msg))
+print(msg.startswith('우리'))
+print(msg.endswith('다'))
+print('45'.zfill(5))
 
+a = "True"
+print(type(a))
 
+a = "3.5"
+b = 4
+print(a*b)
 
+a = "3.5"
+b = "1.5"
+print(a+b)
 
-
-
+a = '3'
+b = float(a)
+print(b)
+print(b ** int(a))
 
 
 
