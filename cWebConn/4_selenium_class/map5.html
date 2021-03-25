@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1f96c3741faf4896821fcb3f897dbd26 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_1f96c3741faf4896821fcb3f897dbd26" ></div>
+        
+</body>
+<script>    
+    
+            var map_1f96c3741faf4896821fcb3f897dbd26 = L.map(
+                "map_1f96c3741faf4896821fcb3f897dbd26",
+                {
+                    center: [37.576475086141166, 126.97688517070613],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 19,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_812798390d1e43f5884bc7ce9712190d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1f96c3741faf4896821fcb3f897dbd26);
+        
+    
+            var marker_90ff288a4f2a4381852bec62285cda44 = L.marker(
+                [37.576475086141166, 126.97688517070613],
+                {}
+            ).addTo(map_1f96c3741faf4896821fcb3f897dbd26);
+        
+    
+            var icon_eafdd4f684ab4fad8ba2c421d676abff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info_sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_90ff288a4f2a4381852bec62285cda44.setIcon(icon_eafdd4f684ab4fad8ba2c421d676abff);
+        
+    
+        var popup_9e0a159cb5d34317a8f2faed2c2c64e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4125c7515d348d6a44254e68be86176 = $(`<div id="html_e4125c7515d348d6a44254e68be86176" style="width: 100.0%; height: 100.0%;">광화문</div>`)[0];
+            popup_9e0a159cb5d34317a8f2faed2c2c64e1.setContent(html_e4125c7515d348d6a44254e68be86176);
+        
+
+        marker_90ff288a4f2a4381852bec62285cda44.bindPopup(popup_9e0a159cb5d34317a8f2faed2c2c64e1)
+        ;
+
+        
+    
+    
+            var circle_marker_dbe638b0485146eb803adcfe2b4a8b29 = L.circleMarker(
+                [37.576475086141166, 126.97688517070613],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "AABB22", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_1f96c3741faf4896821fcb3f897dbd26);
+        
+    
+        var popup_884cbda18c804602b6ca25507307e6c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08db24a5b93f46bd90d97daa130f5df3 = $(`<div id="html_08db24a5b93f46bd90d97daa130f5df3" style="width: 100.0%; height: 100.0%;">광화문</div>`)[0];
+            popup_884cbda18c804602b6ca25507307e6c2.setContent(html_08db24a5b93f46bd90d97daa130f5df3);
+        
+
+        circle_marker_dbe638b0485146eb803adcfe2b4a8b29.bindPopup(popup_884cbda18c804602b6ca25507307e6c2)
+        ;
+
+        
+    
+</script>

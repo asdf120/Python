@@ -80,7 +80,8 @@ print(2j + 3j)
 y = 8.3 / 2.7
 x = 8.3 // 2.7
 print('1.실수 :{0}, 정수 :{1}'.format(y, x))
-print('2.실수 :{}, 정수 :{}'.format(y, x))
+print('2.실수 :'
+      '{}, 정수 :{}'.format(y, x))
 print('3.정수 :{1}, 실수 :{0}'.format(y, x))
 
 # 소수점 두자리까지만 출력

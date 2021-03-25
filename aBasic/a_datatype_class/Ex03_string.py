@@ -61,11 +61,11 @@ msg ='오늘도 행복도 하다'
         다
 """
 print(msg[0])
-print(msg[0:2])
+print(msg[:2])
 print(msg[1:6])
-print(msg[0:6:2])
+print(msg[:6:2])
 print(msg[-1])
-
+print()
 
 
 
@@ -75,7 +75,7 @@ print(msg[-1])
        ` msg[:] 전체 추출
        ` msg[i:-j] i번째부터 뒤에서 j-1 까지 추출
 """
-print()
+print('78line')
 print(msg[0], msg[-0])
 print(msg[:])
 print(msg[5:-2]) #복도
